@@ -8,4 +8,7 @@ For additional instructional videos feel free to click the links below for some 
 Exporting a 4WD mobile robot from SolidWorks as a URDF file, and importing that file into ROS:
 https://youtu.be/et6CEGqmudQ
 
+Exporting the robotic manipulator from SolidWorks as a URDF file, and importing that file into ROS and moveIt:
+https://youtu.be/k2djzsYXc3s
+
 ![PXL_20240327_133343511 (1)](https://github.com/ACBRrobotics/MTREbot/assets/60329456/8b4636e2-674f-4232-8fbe-d30af6336c7e)
