@@ -1,0 +1,4 @@
+rosservice call /link_attacher_node/attach "model_name_1: 'MTREbot_chassis'
+link_name_1: 'base_link'
+model_name_2: 'unit_box'
+link_name_2: 'link'"

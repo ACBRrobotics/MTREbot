@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="MTREBot_full">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00809763256593836 -0.000562322358044154 -0.0289427041542462"
+        rpy="0 0 0" />
+      <mass
+        value="0.98435044127488" />
+      <inertia
+        ixx="0.00719634458823369"
+        ixy="-2.65438242709729E-09"
+        ixz="3.80350663889404E-08"
+        iyy="0.00694500656023865"
+        iyz="-1.52985888763549E-09"
+        izz="0.0123629441660506" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="BR_link">
+    <inertial>
+      <origin
+        xyz="0 0.02152 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.42795" />
+      <inertia
+        ixx="0.00040313"
+        ixy="4.2213E-22"
+        ixz="-2.2648E-36"
+        iyy="0.00067844"
+        iyz="9.9268E-21"
+        izz="0.00040313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/BR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/BR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_joint"
+    type="continuous">
+    <origin
+      xyz="-0.082838 -0.1596 -0.1041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BR_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="FR_link">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 0.02152 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.42795" />
+      <inertia
+        ixx="0.00040313"
+        ixy="4.5137E-22"
+        ixz="-1.0801E-37"
+        iyy="0.00067844"
+        iyz="9.9268E-21"
+        izz="0.00040313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/FR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/FR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_joint"
+    type="continuous">
+    <origin
+      xyz="0.082849 -0.1596 -0.1041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="FL_link">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 -0.02152 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.42795" />
+      <inertia
+        ixx="0.00040313"
+        ixy="2.1117E-21"
+        ixz="-2.9719E-20"
+        iyy="0.00067844"
+        iyz="-7.8622E-21"
+        izz="0.00040313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/FL_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/FL_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_joint"
+    type="continuous">
+    <origin
+      xyz="0.082849 0.1596 -0.1041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="BL_link">
+    <inertial>
+      <origin
+        xyz="0 -0.02152 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.42795" />
+      <inertia
+        ixx="0.00040313"
+        ixy="3.055E-21"
+        ixz="-2.4304E-20"
+        iyy="0.00067844"
+        iyz="-8.2856E-21"
+        izz="0.00040313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/BL_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/BL_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_joint"
+    type="continuous">
+    <origin
+      xyz="-0.082838 0.1596 -0.1041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BL_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="arm_link_one">
+    <inertial>
+      <origin
+        xyz="-8.3267E-17 0.0086412 0.030314"
+        rpy="0 0 0" />
+      <mass
+        value="0.16371" />
+      <inertia
+        ixx="0.00010446"
+        ixy="8.1398E-21"
+        ixz="-5.8658E-21"
+        iyy="6.0271E-05"
+        iyz="2.3857E-12"
+        izz="0.0001256" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_one.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_one.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_one"
+    type="continuous">
+    <origin
+      xyz="0.065661 -0.0045606 0.089"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="arm_link_one" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="arm_link_two">
+    <inertial>
+      <origin
+        xyz="0.00011988 -0.017667 0.03951"
+        rpy="0 0 0" />
+      <mass
+        value="0.097148" />
+      <inertia
+        ixx="8.5571E-05"
+        ixy="-6.7815E-13"
+        ixz="1.0728E-11"
+        iyy="9.0515E-05"
+        iyz="1.1122E-12"
+        izz="1.0467E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_two.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_two.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_two"
+    type="continuous">
+    <origin
+      xyz="0 -0.0384 0.036193"
+      rpy="0 0 0" />
+    <parent
+      link="arm_link_one" />
+    <child
+      link="arm_link_two" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="arm_link_three">
+    <inertial>
+      <origin
+        xyz="0 0.043022 0.039443"
+        rpy="0 0 0" />
+      <mass
+        value="0.3061" />
+      <inertia
+        ixx="0.00020279"
+        ixy="-3.045E-21"
+        ixz="2.1319E-20"
+        iyy="0.00016164"
+        iyz="2.3857E-12"
+        izz="0.00017586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_three.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_three.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_three"
+    type="continuous">
+    <origin
+      xyz="0 0 0.079331"
+      rpy="0 0 0" />
+    <parent
+      link="arm_link_two" />
+    <child
+      link="arm_link_three" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="arm_link_four">
+    <inertial>
+      <origin
+        xyz="-0.0062095 -0.0045372 0.038915"
+        rpy="0 0 0" />
+      <mass
+        value="0.06987" />
+      <inertia
+        ixx="2.9388E-05"
+        ixy="-4.9961E-08"
+        ixz="2.7092E-08"
+        iyy="1.6878E-05"
+        iyz="1.557E-07"
+        izz="2.4049E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_four.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MTREBot_full/meshes/arm_link_four.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_four"
+    type="continuous">
+    <origin
+      xyz="0 0.0384 0.12669"
+      rpy="0 0 0" />
+    <parent
+      link="arm_link_three" />
+    <child
+      link="arm_link_four" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+
+
+  <transmission name="link_1_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm_joint_one">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+  </transmission>
+  <transmission name="link_2_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm_joint_two">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+  </transmission>
+  <transmission name="link_3_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm_joint_three">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+  </transmission>
+  <transmission name="link_4_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm_joint_four">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+  </transmission>
+
+  <gazebo>
+
+    <!-- Example Gazebo plugin for control -->
+    <plugin name="control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+
+    <!-- Example Gazebo plugin for skid steer drive controller -->
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>FL_joint</leftFrontJoint>
+      <rightFrontJoint>FR_joint</rightFrontJoint>
+      <leftRearJoint>BL_joint</leftRearJoint>
+      <rightRearJoint>BR_joint</rightRearJoint>
+      <wheelSeparation>0.4</wheelSeparation>
+      <wheelDiameter>0.215</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <torque>20</torque>
+      <topicName>cmd_vel</topicName>
+      <broadcastTF>false</broadcastTF>
+    </plugin>
+
+  </gazebo>
+
+</robot>

@@ -1,0 +1,3 @@
+<launch>
+	<node name="MTREBot_physical_robot_com" pkg="MTREBot_physical_robot_com" type="MTREBot_physical_robot_com.py" />
+</launch>
